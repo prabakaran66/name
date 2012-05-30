@@ -1,1 +1,47 @@
-its working
+STRING MANIPULATIOn
+#include<studio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	char str[30],str1[30],str2[30],str3[80],j,i,len;
+	clrscr();
+	printf("\t\t\tSTRING MANIPULATIONS\n");
+	printf("\t\t ******\n");
+	printf("Enter a string: ");
+	gets(str);
+	for(i=0;str[i]!='\0';i++);
+	printf("Length of %s is %d",str,i);
+	len = i;
+	for(j=0;j<len;j++)
+	{
+		str1[i] = str[i];
+	}
+	str1[i] = '\0';
+	printf("\nThe Copied String is %s",str1);
+	printf("\n To Concatenarate Enter Another String");
+	gets(str2);
+	for(i=0;i<len;j++)
+	{
+		str3[i] = str[i];
+	}
+	for(j=0;j<strlen(str2);j++)
+	{
+		str3[i] = str2[j];
+		i++;
+	}
+	str3[i] = '\0';
+	
+	printf("\n The Concatenated String is %s",str3);
+	getch();
+}
+
+OUTPUT
+		STRING MANIPULATIONS
+		********************
+	Enter a String : WELCOME
+	Length of WELCOME is 7
+	The Copied String is WELCOME
+	To Concatenate Enter Another String : TO C
+	The Concatenated String is WELCOME TO Cits working
+test with gui tool to commit
